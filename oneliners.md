@@ -5,6 +5,10 @@ One liners
 ```sh
 # Reverse line/row order except header
 >awk '{a[NR]=$0} END{print a[1]; for (i=NR; i>1; i--) print a[i]}' hage.csv
+
+# Not show up duplicated rows without sort / ソートしないで重複行を削除する
+# https://qiita.com/arcizan/items/9cf19cd982fa65f87546
+>awk '!a[$0]++' hage.txt
 ```
 
 ## sort
