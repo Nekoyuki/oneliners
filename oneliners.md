@@ -14,7 +14,8 @@ One liners
 ## cut
 
 ```sh
-# Show up 2nd column and further, which are separated by space, for example, skip history number out of history output.
+# Show up 2nd column and further, which are separated by space.
+# For example, skip history number out of history output.
 >history | cut -d' ' -f 4-
 ```
 
