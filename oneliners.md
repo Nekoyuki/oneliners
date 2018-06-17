@@ -33,6 +33,9 @@ One liners
 
 # Sort by 5th column in reverse order
 >(head -1 hage.csv ; tail -n +2 hage.csv | sort -t, -k5 -n -r) | csvlook
+
+# tac
+>history | sort -k1,1nr
 ```
 
 ## csvkit
