@@ -9,6 +9,10 @@ One liners
 # Not show up duplicated rows without sort / ソートしないで重複行を削除する
 # https://qiita.com/arcizan/items/9cf19cd982fa65f87546
 >awk '!a[$0]++' hage.txt
+
+# Pull each other rows, pull only even/odd rows / 偶数行、奇数行のみの取り出し。
+>awk 'NR%2==0' hage.txt     # Even
+>awk 'NR%2==1' hage.txt     # Odd
 ```
 
 ## cut
