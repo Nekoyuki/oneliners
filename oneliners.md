@@ -13,6 +13,9 @@ One liners
 # Pull each other rows, pull only even/odd rows / 偶数行、奇数行のみの取り出し。
 >awk 'NR%2==0' hage.txt     # Even
 >awk 'NR%2==1' hage.txt     # Odd
+
+# Skip first line / 1行目をスキップ
+>awk 'NR>1 {print}' hage.txt
 ```
 
 ## cut
