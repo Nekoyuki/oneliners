@@ -45,6 +45,19 @@ One liners
 >history | sort -k1,1nr
 ```
 
+## find
+
+```sh
+# Find files that were updated within 10 days.
+>find . -mtime -10 -ls
+
+# Find files that were updated more than 10 days ago.
+>find . -mtime +10 -ls
+
+# Using regexp, find files that match to ".bin"
+>find . -regex ".*.bin.*" -ls
+```
+
 ## csvkit
 
 ```sh
