@@ -16,6 +16,9 @@ One liners
 
 # Skip first line / 1行目をスキップ
 >awk 'NR>1 {print}' hage.txt
+
+# KB --> GB
+>awk '{printf "%.2f", $2/1024/1024; exit}' /proc/meminfo
 ```
 
 ## cut
